@@ -1,0 +1,219 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height:50px;
+    /* --primary-color:cyan; */
+}
+/* nevigation bar */
+ #navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -5px;
+   
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navigation bar: logo and image */
+#logo{
+    margin: 20px 30px;
+}
+#logo img{
+    height: 70px;
+    width: 70px;
+    
+}
+
+/* navbar: list styling */
+
+#navbar ul{
+display: flex;
+font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+color: black;
+background-color: aliceblue;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+  
+}
+#home::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: azure;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter', cursive;
+
+
+}
+/* servicer-section */
+#services{
+    margin: 20px;
+ text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: -10px 5px;
+    border-radius: 23px;
+    background: #e0d9d0;
+    margin-bottom: 20px;
+}
+#services .box img{
+   
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* client section */
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg');
+    width: 100%;
+    height: 35%;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    
+    height: 100px;
+    width: 100px;
+}
+.client-item{
+    padding: 20px;
+    /* margin: 20px; */
+}
+/* contact section */
+#contact{
+    position: relative;
+    color: white ;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../wine7.jpg');
+} 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px 20px;
+} */
+/* utility classes */
+
+.h-primary{
+    color: rgb(17, 18, 19);
+    font-size: 2.8rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+
+
+}
+.h-secondarycenter{
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: 'Architects Daughter', cursive;
+}
+.btn{
+    padding: 4px 15px;
+    border: 2px solid snow;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
